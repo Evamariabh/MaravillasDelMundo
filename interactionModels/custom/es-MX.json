@@ -1,0 +1,64 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancelar",
+            "cancela"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "ayuda me",
+            "ayuda"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "detente",
+            "detener",
+            "para",
+            "adios"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "pais",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "informacionfloresIntent",
+          "samples": [
+            "que sabes de {pais}",
+            "di algo de los {pais}",
+            "dime algo sobre un lugar como {pais}",
+            "di me una curiosidad de {pais}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "pais",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "GirasolesIntent",
+          "samples": [
+            "las flor de {pais}"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "maravillas mundo"
+    }
+  }
+}
